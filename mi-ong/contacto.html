@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos - Patitas Felices</title>
+</head>
+<body>
+     <header> 
+    <img src="" alt="Logo de Patitas Felices">
+     <h1>Patitas Felices</h1>
+        <h2>Refugio de adopcion para perritos necesitados</h2>
+        <nav>
+            <ul>
+                <li><a href= "./index.html">Index</a></li>
+                <li><a href= "./adopcion.html">Adopcion</a></li>
+                <li><a href= "./contacto.html">Contacto</a></li>
+            </ul>
+    </nav>
+   </header> 
+   <main>
+    <h2>Contacto</h2>
+    <p>Para consultas, rescates, voluntariado o donaciones.completa el formulario o escribinos a <a href="mailto:info@patitasfelices.ong">info@patitasfelices.ong</a></p>
+    <form action="#" method="post">
+        <table>
+        <tr>
+        <td><lebel for="nombre">Nombre y Apellido</label></td>
+        <td><input type="text" id="nombre" name="nombre" placeholder="Ej: Nahir Alvarez" required></td>
+        </tr>
+        <tr>
+        <td><lebel for="email">Correo Electronico</label></td>
+        <td><input type="email" id="email" name="email" placeholder="tucorreo@mail.com" required></td>
+        </tr>
+        <tr>
+        <td><lebel for="telefono">Telefono</lebel></td>
+        <td><input type="tel" id="telefono" name="telefono" placeholder="+54 9 123456789" required></td>
+        </tr>
+        <tr>
+        <td><lebel for="programa">Motivo de contacto</lebel></td>
+        <td>
+        <select name="programa" id="programa" required>
+         <option value="elegir programa">Elegir motivo</option>  
+         <option value="voluntariado">Voluntariado</option>
+         <option value="met">Rescate de animales</option>
+         <option value="met">Donaciones</option> 
+         <option value="met">Otros</option>
+        </select>
+        </td>
+        </tr>
+        <tr>
+        <td><lebel for="Disponibilidad">Disponibilidad</lebel></td>
+        <td>
+        <select name="Disponibilidad" id="Disponibilidad" required>
+        <option value="Horario de contacto">Horario de contacto preferido</option>
+        <option value="Mañana">Mañana</option>
+        <option value="Tarde">Tarde</option>
+        <option value="Noche">Noche</option>
+        </select>
+        </td>
+        </tr>
+        <tr>
+        <td><lebel for="Mensaje">Contanos más detalles</lebel></td>
+        <td><textarea name="Mensaje" id="Mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..." required></textarea></td>
+        </tr>
+        <tr>
+        <td><button type="submit">Enviar</button></td>
+        </tr>
+        </table>
+    </form>
+    </main>
+   <footer>
+    <p> <small>Patitas Felices &copy; 2026</small></p>
+   </footer>
+</body>
+</html>
