@@ -22,50 +22,37 @@
     <h2>Contacto</h2>
     <p>Para consultas, rescates, voluntariado o donaciones. Completá el formulario o escribinos a <a href="mailto:info@patitasfelices.ong">info@patitasfelices.ong</a></p>
     <form action="#" method="post">
-        <table>
-        <tr>
-        <td><lebel for="nombre">Nombre y Apellido</lebel></td>
-        <td><input type="text" id="nombre" name="nombre" placeholder="Ej: Nahir Alvarez" required></td>
-        </tr>
-        <tr>
-        <td><lebel for="email">Correo Electronico</lebel></td>
-        <td><input type="email" id="email" name="email" placeholder="tucorreo@mail.com" required></td>
-        </tr>
-        <tr>
-        <td><lebel for="telefono">Telefono</lebel></td>
-        <td><input type="tel" id="telefono" name="telefono" placeholder="+54 9 123456789" required></td>
-        </tr>
-        <tr>
-        <td><lebel for="programa">Motivo de contacto</lebel></td>
-        <td>
-        <select name="programa" id="programa" required>
+        <br>
+        <label for="nombre">Nombre y Apellido</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej: Nahir Alvarez" required>
+        <br>
+        <label for="email">Correo Electronico</label>
+        <input type="email" id="email" name="email" placeholder="tucorreo@mail.com" required>
+        <br>
+        <label for="telefono">Telefono</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="+54 9 123456789" required>
+        <br>
+        <label for="programa">Motivo de contacto</label>
+         <select name="programa" id="programa" required>
          <option value="elegir programa">Elegir motivo</option>  
          <option value="voluntariado">Voluntariado</option>
-         <option value="met">Rescate de animales</option>
-         <option value="met">Donaciones</option> 
-         <option value="met">Otros</option>
+         <option value="rescate">Rescate de animales</option>
+         <option value="donaciones">Donaciones</option> 
+         <option value="otros">Otros</option>
         </select>
-        </td>
-        </tr>
-        <tr>
-        <td><lebel for="Disponibilidad">Disponibilidad</lebel></td>
-        <td>
-        <select name="Disponibilidad" id="Disponibilidad" required>
+        <br>
+        <label for="disponibilidad">Disponibilidad</label>
+        <select name="disponibilidad" id="disponibilidad" required>
         <option value="Horario de contacto">Horario de contacto preferido</option>
         <option value="Mañana">Mañana</option>
         <option value="Tarde">Tarde</option>
         <option value="Noche">Noche</option>
         </select>
-        </td>
-        </tr>
-        <tr>
-        <td><lebel for="Mensaje">Contanos más detalles</lebel></td>
-        <td><textarea name="Mensaje" id="Mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..." required></textarea></td>
-        </tr>
-        <tr>
-        <td><button type="submit">Enviar</button></td>
-        </tr>
-        </table>
+        <br>
+        <label for="mensaje">Contanos más detalles</label>
+        <textarea name="mensaje" id="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        <br>
+        <button type="submit">Enviar</button>
     </form>
     </main>
    <footer>
