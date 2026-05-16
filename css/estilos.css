@@ -55,3 +55,31 @@ footer {
   text-align: center;
   border-top: 1px solid #dee2e6; /* Línea sutil para separar del cuerpo */
 }
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.formulario {
+  background-color: #ffffff; /* Fondo blanco para el formulario */
+  margin: 30 px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra sutil para destacar */
+}
+
+.banner {
+  background-color: var(--color-fondo);
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+button {
+    background-color:var(--color-primario);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
