@@ -1,0 +1,57 @@
+/*tipografia*/
+body {
+            font-family: 'Google Sans', sans-serif;
+            font-weight: 400; /* Peso normal */
+            color: #333;      /* Color de texto principal */
+            margin: 0;
+            padding: 20px;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+
+h1 {
+  font-size: 2.5rem;    /* Aproximadamente 40px */
+  color: whitesmoke;       /* Azul oscuro profundo */
+  margin-bottom: 1rem;
+  font-weight: 800;     /* Extra negrita */
+}
+
+h2 {
+  font-size: 2rem;      /* Aproximadamente 32px */
+  color: lightblue;       /* Gris azulado */
+  border-bottom: 2px solid #eaeaea; /* Línea sutil decorativa */
+  padding-bottom: 0.5rem;
+}
+
+
+
+/*colores*/
+:root {
+ --color-primario: #028090;
+ --color-secundario: #1A2B4A;
+ --color-acento: #E8611A;
+ --color-fondo:#f4f7f6;
+ --color-texto: #1A1A1A;
+}
+
+body {
+    background-color: var(--color-fondo);
+}
+
+
+header {
+  background-color: #2c3e50; /* Un azul oscuro elegante */
+  color: #ffffff;            /* Texto blanco para contrastar */
+  padding: 20px;
+  text-align: center;
+}
+
+
+footer {
+  background-color: #f8f9fa; /* Un gris muy claro/hueso */
+  color: #7f8c8d;            /* Texto gris medio */
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 1px solid #dee2e6; /* Línea sutil para separar del cuerpo */
+}
