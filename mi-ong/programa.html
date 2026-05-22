@@ -2,16 +2,30 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Adopción de Mascotas</title>
+    <title>programas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
     <link rel=stylesheet href=../css/estilos.css>
 </head>
 <body>
-
-    <h1>Formulario de Adopción</h1>
-
+    <header> 
+    <img src="" alt="Logo de Patitas Felices">
+     <h1>Patitas Felices</h1>
+        <h2>Refugio de adopcion para perritos necesitados</h2>
+        <nav>
+            <ul>
+                <li><a href= "./index.html">Index</a></li>
+                <li><a href= "./nosotros.html">Nosotros</a></li>
+                <li><a href= "./programa.html">programas</a></li>
+                <li><a href= "./contacto.html">Contacto</a></li>
+            </ul>
+    </nav>
+   </header> 
+    <main>
+       <h2>Formulario de Adopción</h2>
+       <section class="formulario">
+       <p>Si estás interesado en adoptar un perrito, por favor completá el siguiente formulario y nos pondremos en contacto con vos a la brevedad.</p>
     <form>
         <label for="nombre">Nombre completo:</label><br>
         <input type="text" id="nombre" name="nombre" required><br><br>
@@ -34,11 +48,13 @@
 
         <button type="submit">Enviar solicitud</button>
     </form>
+    </section>
 
     <hr>
 
-    <h1>Dar un animal en adopción</h1>
-
+    <h2>Dar un animal en adopción</h2>
+<section class="formulario">
+    <p>Si necesitás dar un animal en adopción, completá el siguiente formulario:</p>
     <form>
         <label for="nombreDueño">Tu nombre:</label><br>
         <input type="text" id="nombreDueño" name="nombreDueño" required><br><br>
@@ -64,6 +80,7 @@
 
         <button type="submit">Publicar</button>
     </form>
-
+    </section>
+    </main>
 </body>
 </html>
