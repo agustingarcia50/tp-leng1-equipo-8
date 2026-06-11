@@ -7,36 +7,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
-    <link rel=stylesheet href=../css/estilos.css>
+    <link rel="stylesheet" href="../css/estilos.css">
 
 </head>
 <body>
      <header>
-        <img src="../img/logoPatitas.jpeg" alt="logo Patitas Felices">
+        <img src="../img/logoPatitas.jpeg" alt="Logo Patitas Felices">
         <h1>Patitas Felices</h1>
         <h2>Refugio de adopcion para perritos necesitados</h2>
-        <nav>
+        <nav aria-label="Menú de navegación principal">
             <ul>
-                <li><a href= "./index.html">Index</a></li>
+                <li><a href= "./index.html">Inicio</a></li>
                 <li><a href= "./nosotros.html">Nosotros</a></li>
-                <li><a href= "./programa.html">programas</a></li>
+                <li><a href= "./programa.html">Programas</a></li>
                 <li><a href= "./contacto.html">Contacto</a></li>
 
             </ul>
 
         </nav>
-        <nav>
-            <a href="#redes"> Conoce nuestras redes</a> <a href="www.google.com" target="_blank"></a>
+        <nav class="enlaces-destacados" aria-label="Enlaces Destacados">
+            <a href="https://www.instagram.com/patitasfelices" target="_blank" rel="noopener noreferrer"> Conoce nuestras redes</a> 
             <a href="#impacto"> Numeros</a>
         </nav>
     </header>
 
     <main>
         <section class="banner">
-            <figure>
+           
                 <img src="../img/banner.jpg" alt="Perritos felices corriendo en el refugio" width="1000" height="350" loading="lazy">
-                <figcaption>Bienvenidos a Patitas Felices: Un lugar donde segundas oportunidades se vuelven realidad.</figcaption>
-            </figure>
+                <h2>Bienvenidos a Patitas Felices</h2>
+                <p>Un lugar donde segundas oportunidades se vuelven realidad.</p>
+            
         </section>
 
         <!-- 2. SECCIÓN QUIÉNES SOMOS Y MISIÓN -->
@@ -95,6 +96,18 @@
                 </article>
 
             </div>
+        </section>
+
+        <section id="impacto" class="contenido-seccion">
+             <h2>Nuestro Impacto</h2>
+
+                    <ul>
+                        <li><strong>Más de 500 perros rescatados</strong></li>
+                        <li><strong>420 adopciones exitosas</strong></li>
+                        <li><strong>80 familias de tránsito colaborando</strong></li>
+                        <li><strong>600 perros vacunados y castrados</strong></li>
+                     </ul>
+</section>
         </section>
 
        
