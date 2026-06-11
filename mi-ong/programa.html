@@ -10,7 +10,6 @@
 </head>
 <body>
     <header> 
-        <header>
         <img src="../img/logoPatitas.jpeg" alt="Logo Patitas Felices">
         <h1>Patitas Felices</h1>
         <h2>Refugio de adopcion para perritos necesitados</h2>
@@ -29,67 +28,188 @@
             <a href="#impacto"> Numeros</a>
         </nav>
     </header>
-   </header> 
+   
+
+
     <main>
-       <h2>Formulario de Adopción</h2>
-       <section class="formulario">
-       <p>Si estás interesado en adoptar un perrito, por favor completá el siguiente formulario y nos pondremos en contacto con vos a la brevedad.</p>
-    <form>
-        <label for="nombre">Nombre completo:</label><br>
+        <section>
+             <h2>Perros en adopción</h2>
+             <table> 
+                <thead>
+                    <tr>
+                        <th>Foto</th>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Tamaño</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr> 
+                        <td><img src="../img/max.jpg" alt="foto de max"></td>
+                        <td>Max</td>
+                        <td>3 años</td>
+                        <td>Grande</td>
+                    </tr>
+                    <tr> 
+                        <td><img src="../img/luna.jpg" alt="foto de luna"></td>
+                        <td>Luna</td>
+                        <td>2 años</td>
+                        <td>Mediano</td>
+                    </tr>
+                    <tr> 
+                        <td><img src="../img/coco.jpg" alt="foto de coco"></td>
+                        <td>Coco</td>
+                        <td>4 años</td>
+                        <td>Pequeño</td>
+                    </tr>
+                    <tr> 
+                        <td><img src="../img/canela.jpg" alt="foto de canela"></td>
+                        <td>Canela</td>
+                        <td>1 año</td>
+                        <td>Mediano</td>
+                    </tr>
+                </tbody>
+                
+             </table>
+        </section>
+
+    <section class="formulario"> 
+        <h2>Formulario de Adopción</h2>
+       
+            <p>
+                      
+                En Patitas Felices promovemos la adopción responsable. Cada perrito merece un hogar seguro, amoroso y comprometido de por vida.
+  
+            </p>
+
+            
+    <form  action="#" method="post">
+        <label for="nombre">Nombre completo:</label>
         <input type="text" id="nombre" name="nombre" required>
         <br>
 
-        <label for="email">Correo electrónico:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
 
-        <label for="telefono">Teléfono:</label><br>
-        <input type="tel" id="telefono" name="telefono"><br><br>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono">
+        <br>
 
-        <label for="tipoMascota">¿Qué tipo de mascota querés adoptar?</label><br>
+        <label for="mascota">¿Qué mascota querés adoptar?</label>
         <select id="tipoMascota" name="tipoMascota">
-            <option value="perro">Perro</option>
-            <option value="gato">Gato</option>
-            <option value="otro">Otro</option>
-        </select><br><br>
+            <option value="elegir">Elegí una mascota</option>
+            <option value="perro">Coco</option>
+            <option value="perro">Luna</option>
+            <option value="perro">Max</option>
+            <option value="perro">Canela</option>
+        </select>
+        <br>
 
-        <label for="mensaje">Contanos por qué querés adoptar:</label><br>
-        <textarea id="mensaje" name="mensaje" rows="4"></textarea><br><br>
+        <label for="mensaje">Contanos por qué querés adoptar:</label>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+        <br>
 
         <button type="submit">Enviar solicitud</button>
     </form>
     </section>
 
     <hr>
+        
+    <section class="formulario">
+        <h2>Dar un animal en adopción</h2>
+    
+             <p>Si necesitás dar un animal en adopción, completá el siguiente formulario:</p>
+        <form action="#" method="post">
+        <label for="nombreDueño">Tu nombre:</label>
+        <input type="text" id="nombreDueño" name="nombreDueño" required>
+        <br>
 
-    <h2>Dar un animal en adopción</h2>
-<section class="formulario">
-    <p>Si necesitás dar un animal en adopción, completá el siguiente formulario:</p>
-    <form>
-        <label for="nombreDueño">Tu nombre:</label><br>
-        <input type="text" id="nombreDueño" name="nombreDueño" required><br><br>
+        <label for="contacto">Contacto:</label>
+        <input type="email" id="contacto" name="contacto" required>
+        <br>
 
-        <label for="contacto">Contacto (email o teléfono):</label><br>
-        <input type="text" id="contacto" name="contacto" required><br><br>
+        <label for="nombreMascota">Nombre del animal:</label>
+        <input type="text" id="nombreMascota" name="nombreMascota">
+        <br>
 
-        <label for="nombreMascota">Nombre del animal:</label><br>
-        <input type="text" id="nombreMascota" name="nombreMascota"><br><br>
+        <label for="edad">Edad aproximada:</label>
+        <input type="number" id="edad" name="edad">
+        <br>
 
-        <label for="edad">Edad aproximada:</label><br>
-        <input type="number" id="edad" name="edad"><br><br>
-
-        <label for="tipo">Tipo de animal:</label><br>
-        <select id="tipo" name="tipo">
-            <option value="perro">Perro</option>
-            <option value="gato">Gato</option>
+        <label for="motivo">Motivo de entrega:</label>
+        <select id="motivo" name="motivo">
+            <option value="elegir_motivo">Elegí un motivo</option>
+            <option value="no_puedo_cuidar">No puedo cuidarlo</option>
+            <option value="mudanza">Mudanza</option>
+            <option value="problemas_economicos">Problemas económicos</option>
             <option value="otro">Otro</option>
-        </select><br><br>
+        </select>
+        <br>
 
-        <label for="descripcion">Descripción:</label><br>
-        <textarea id="descripcion" name="descripcion" rows="4"></textarea><br><br>
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+        <br>
 
-        <button type="submit">Publicar</button>
+        <button type="submit">Dar en adopción</button>
+        
     </form>
     </section>
-    </main>
+       
+    <hr>
+  
+     <section class="formulario">
+     
+    <h2>Ser voluntario</h2>
+   
+      <p>
+        Si querés sumarte como voluntario en Patitas Felices, completá el siguiente formulario. Nuestro equipo se pondrá en contacto contigo para coordinar tu participación.
+      </p>
+
+  <form action="#" method="post">
+
+    <label for="nombre">Nombre y apellido:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <br>
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <br>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required>
+
+    <br>
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" min="16" required>
+
+    <br>
+
+    <label for="disponibilidad">Disponibilidad horaria:</label>
+    <select id="disponibilidad" name="disponibilidad" required>
+      <option value="manana">Mañana</option>
+      <option value="tarde">Tarde</option>
+      <option value="noche">Noche</option>
+      <option value="fines_de_semana">Fines de semana</option>
+    </select>
+
+    <br>
+
+    <label for="experiencia">¿Tenés experiencia con animales?</label>
+    <textarea id="experiencia" name="experiencia" rows="3"></textarea>
+
+    <br>
+
+    <button type="submit">Quiero ser voluntario</button>
+
+  </form>
+  </section>
+</main>
+    <footer>
+         <p>&copy; 2026 Refugio Patitas Felices. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
