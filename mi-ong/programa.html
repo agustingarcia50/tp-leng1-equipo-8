@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programas - Patitas Felices</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,13 +26,63 @@
         </nav>
         <nav class="enlaces-destacados" aria-label="Enlaces Destacados">
             <a href="https://www.instagram.com/patitasfelices" target="_blank" rel="noopener noreferrer"> Conoce nuestras redes</a> 
-            <a href="#impacto"> Numeros</a>
+            
         </nav>
     </header>
    
 
 
     <main>
+        <article>
+            <h2>Rescate y Rehabilitación</h2>
+
+            <p>
+                En Patitas Felices rescatamos perros en situación de abandono,
+                maltrato o riesgo. Nuestro equipo les brinda atención veterinaria,
+                alimentación y cuidados para que puedan recuperarse física y
+                emocionalmente.
+            </p>
+
+            <h3>¿A quién está dirigido?</h3>
+            <p>
+                 A perros que necesitan ayuda inmediata y protección.
+            </p>
+
+            <h3>¿Cómo participar?</h3>
+            <p>
+                Si conocés un animal que necesite ayuda o querés colaborar con
+                esta iniciativa, podés comunicarte con nosotros a través de la
+                página de contacto.
+            </p>
+        </article>
+
+        <article>
+            <h2>Adopción Responsable</h2>
+
+            <p>
+                Buscamos hogares comprometidos para nuestros perros rescatados,
+                asegurándonos de que cada adopción sea segura y permanente.
+            </p>
+
+           <h3>¿A quién está dirigido?</h3>
+            <p>
+                 A personas y familias interesadas en adoptar una mascota.
+            </p>
+
+           <h3>¿Cómo participar?</h3>
+            <p>
+                Completando el formulario de adopción y siguiendo el proceso de evaluación.
+            </p>
+
+            <h3>Proceso de adopción</h3>
+            <ol>
+                <li>Completar el formulario de adopción.</li>
+                <li>Entrevista con nuestro equipo.</li>
+                <li>Evaluación del hogar.</li>
+                <li>Entrega responsable de la mascota.</li>
+            </ol>
+       </article>
+
         <section>
              <h2>Perros en adopción</h2>
              <table> 
@@ -76,24 +127,21 @@
     <section class="formulario"> 
         <h2>Formulario de Adopción</h2>
        
-            <p>
-                      
-                En Patitas Felices promovemos la adopción responsable. Cada perrito merece un hogar seguro, amoroso y comprometido de por vida.
-  
-            </p>
+        <p>
+            Si estás interesado en adoptar a uno de nuestros perros, por favor completa el siguiente formulario. Nuestro equipo se pondrá en contacto contigo para continuar con el proceso de adopción.
+        </p>
 
-            
     <form  action="#" method="post">
-        <label for="nombre">Nombre completo:</label>
-        <input type="text" id="nombre" name="nombre" required>
+        <label for="nombre-adopcion">Nombre completo:</label>
+        <input type="text" id="nombre-adopcion" name="nombre" required>
         <br>
 
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="email-adopcion">Correo electrónico:</label>
+        <input type="email" id="email-adopcion" name="email" required>
         <br>
 
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono">
+        <label for="telefono-adopcion">Teléfono:</label>
+        <input type="tel" id="telefono-adopcion" name="telefono">
         <br>
 
         <label for="mascota">¿Qué mascota querés adoptar?</label>
@@ -116,46 +164,26 @@
 
     <hr>
         
-    <section class="formulario">
-        <h2>Dar un animal en adopción</h2>
-    
-             <p>Si necesitás dar un animal en adopción, completá el siguiente formulario:</p>
-        <form action="#" method="post">
-        <label for="nombreDueño">Tu nombre:</label>
-        <input type="text" id="nombreDueño" name="nombreDueño" required>
-        <br>
+    <article>
+        <h2>Educación y Comunidad</h2>
 
-        <label for="contacto">Contacto:</label>
-        <input type="email" id="contacto" name="contacto" required>
-        <br>
+         <p>
+            Promovemos la tenencia responsable de mascotas mediante campañas,
+            charlas y actividades comunitarias que fomentan el respeto y el
+            cuidado de los animales.
+         </p>
 
-        <label for="nombreMascota">Nombre del animal:</label>
-        <input type="text" id="nombreMascota" name="nombreMascota">
-        <br>
+        <h3>¿A quién está dirigido?</h3>
+         <p>
+            A estudiantes, vecinos y todas las personas interesadas en el bienestar animal.
+         </p>
 
-        <label for="edad">Edad aproximada:</label>
-        <input type="number" id="edad" name="edad">
-        <br>
+        <h3>¿Cómo participar?</h3>
+         <p>
+            Sumándote como voluntario o participando en nuestras actividades y campañas.
+         </p>
+    </article>
 
-        <label for="motivo">Motivo de entrega:</label>
-        <select id="motivo" name="motivo">
-            <option value="elegir_motivo">Elegí un motivo</option>
-            <option value="no_puedo_cuidar">No puedo cuidarlo</option>
-            <option value="mudanza">Mudanza</option>
-            <option value="problemas_economicos">Problemas económicos</option>
-            <option value="otro">Otro</option>
-        </select>
-        <br>
-
-        <label for="descripcion">Descripción:</label>
-        <textarea id="descripcion" name="descripcion" rows="4"></textarea>
-        <br>
-
-        <button type="submit">Dar en adopción</button>
-        
-    </form>
-    </section>
-       
     <hr>
   
      <section class="formulario">
@@ -168,23 +196,23 @@
 
   <form action="#" method="post">
 
-    <label for="nombre">Nombre y apellido:</label>
-    <input type="text" id="nombre" name="nombre" required>
+    <label for="nombre-voluntariado">Nombre y apellido:</label>
+    <input type="text" id="nombre-voluntariado" name="nombre" required>
 
     <br>
 
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email" name="email" required>
+    <label for="email-voluntariado">Correo electrónico:</label>
+    <input type="email" id="email-voluntariado" name="email" required>
 
     <br>
 
-    <label for="telefono">Teléfono:</label>
-    <input type="tel" id="telefono" name="telefono" required>
+    <label for="telefono-voluntariado">Teléfono:</label>
+    <input type="tel" id="telefono-voluntariado" name="telefono" required>
 
     <br>
 
-    <label for="edad">Edad:</label>
-    <input type="number" id="edad" name="edad" min="16" required>
+    <label for="edad-voluntariado">Edad:</label>
+    <input type="number" id="edad-voluntariado" name="edad" min="16" required>
 
     <br>
 
