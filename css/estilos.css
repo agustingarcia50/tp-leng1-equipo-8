@@ -1,4 +1,4 @@
-/*colores*/
+/*variables*/
 :root {
   --color-primario: #8D6E63;   /* marrón cálido */
   --color-secundario: #5D4037;
@@ -32,6 +32,7 @@ h2 {
   padding-bottom: 0.5rem;
 }
 
+/*header*/
 
 header {
   background-color: var(--color-secundario);
@@ -40,7 +41,7 @@ header {
   text-align: center;
 }
 
-
+/*navegación*/
 
 nav {
   margin-top: 10px;
@@ -77,7 +78,26 @@ nav a:hover {
   color: var(--color-primario);
 }
 
+/*contenido principal*/
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
+section {
+    margin-bottom: 30px;
+}
+
+article {
+    margin-bottom: 25px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/*banner*/
 .banner {
   text-align: center;
   padding: 30px;
@@ -102,13 +122,16 @@ nav a:hover {
   margin: 0;
 }
 
+/*tabla*/
+
 table {
   width: 100%;
-  border-collapse: collapse;
   margin-top: 20px;
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
+  border: 2px solid var(--color-primario);
+  border-collapse: collapse;
 }
 
 table img {
@@ -131,23 +154,37 @@ th {
 td {
   padding: 12px;
   text-align: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom:  1px solid var(--color-acento);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--color-fondo);
 }
 
 tr:hover {
   background-color: rgba(0,0,0,0.05);
 }
 
+/*formularios*/
 
 .formulario {
   background-color: var(--color-fondo);
   margin: 30px auto;
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 2px 4px rgba(29, 53, 87, 0.2);
+  box-shadow: 0 2px 4px rgba(29, 53, 87, 0.2);   
 }
 
-
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
 
 button {
   background-color: var(--color-primario);
@@ -163,6 +200,8 @@ button:hover {
   background-color: var(--color-acento);
   color: var(--color-secundario);
 }
+
+/*footer*/
 
 footer {
   background-color: var(--color-secundario);
