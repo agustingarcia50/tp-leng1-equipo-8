@@ -7,23 +7,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
 
 </head>
 <body>
      <header>
-        <img src="../img/logoPatitas.jpeg" alt="Logo Patitas Felices">
         <h1>Patitas Felices</h1>
         <h2>Refugio de adopcion para perritos necesitados</h2>
-        <nav aria-label="Menú de navegación principal">
-            <ul>
-                <li><a href= "./index.html">Inicio</a></li>
-                <li><a href= "./nosotros.html">Nosotros</a></li>
-                <li><a href= "./programa.html">Programas</a></li>
-                <li><a href= "./contacto.html">Contacto</a></li>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Menú de navegación principal">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="../img/logoPatitas.jpeg" alt="Logo Patitas Felices"  width="250">
+                </a>
 
-            </ul>
+                <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
 
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li  class="nav-item"><a class="nav-link "href= "./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link "href= "./nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link "href= "./programa.html">Programas</a></li>
+                    <li class="nav-item"><a class="nav-link "href= "./contacto.html">Contacto</a></li>
+
+                </ul>
+            </div> <!-- collapse navbar-collapse -->
+            </div> <!-- container -->
         </nav>
         <nav class="enlaces-destacados" aria-label="Enlaces Destacados">
             <a href="https://www.instagram.com/patitasfelices" target="_blank" rel="noopener noreferrer"> Conoce nuestras redes</a> 
@@ -57,10 +76,11 @@
 
         <!-- 3. SECCIÓN RESUMEN VISUAL DE PROGRAMAS -->
         <section id="programas" class="contenido-seccion">
+            <div class="container">
             <h2>Nuestras Áreas de Trabajo</h2>
             <p class="subtitulo">Conoce los pilares que hacen posible nuestra labor diaria:</p>
-            
-            <div class="contenedor-tarjetas">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
                 
                 <!-- Programa 1 -->
                 <article class="tarjeta-programa">
@@ -72,7 +92,9 @@
                         </figcaption>
                     </figure>
                 </article>
+                </div>
 
+                <div class="col-12 col-md-6 col-lg-4">
                 <!-- Programa 2 -->
                 <article class="tarjeta-programa">
                     <figure>
@@ -83,7 +105,9 @@
                         </figcaption>
                     </figure>
                 </article>
+                </div>
 
+                <div class="col-12 col-md-6 col-lg-4">
                 <!-- Programa 3 -->
                 <article class="tarjeta-programa">
                     <figure>
@@ -94,6 +118,8 @@
                         </figcaption>
                     </figure>
                 </article>
+                </div>
+                </div> <!-- row -->
 
             </div>
         </section>
@@ -116,5 +142,6 @@
     <footer>
          <p>&copy; 2026 Refugio Patitas Felices. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
