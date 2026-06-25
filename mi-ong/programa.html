@@ -14,10 +14,10 @@
     <header> 
         <h1>Patitas Felices</h1>
         <h2>Refugio de adopcion para perritos necesitados</h2>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Menú de navegación principal">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-patitas" aria-label="Menú de navegación principal">
             <div class="container">
                 <a class="navbar-brand" href="./index.html">
-                    <img src="../img/logoPatitas.jpeg"alt="Logo Patitas Felices">
+                     <img class="navbar-logo" src="../img/logoPatitas.jpeg" alt="Logo Patitas Felices" >
                 </a>
 
                 <button class="navbar-toggler"
@@ -33,7 +33,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                     <li  class="nav-item"><a class="nav-link "href= "./index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link "href= "./nosotros.html">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link "href= "./programa.html">Programas</a></li>
@@ -41,17 +41,16 @@
 
 
             </ul>
+            </div> <!-- collapse navbar-collapse -->
+            </div> <!-- container -->
 
-        </nav>
-        <nav class="enlaces-destacados" aria-label="Enlaces Destacados">
-            <a href="https://www.instagram.com/patitasfelices" target="_blank" rel="noopener noreferrer"> Conoce nuestras redes</a> 
-            
         </nav>
     </header>
    
 
-
-    <main>
+     
+    <main class="container my-5">
+        <!-- Programas de la ONG -->
         <article>
             <h2>Rescate y Rehabilitación</h2>
 
@@ -71,7 +70,7 @@
             <p>
                 Si conocés un animal que necesite ayuda o querés colaborar con
                 esta iniciativa, podés comunicarte con nosotros a través de la
-                página de contacto.
+                página de <a href="./contacto.html">Contacto</a>
             </p>
         </article>
 
@@ -102,6 +101,7 @@
             </ol>
        </article>
 
+       <div class="container" style="max-width: 800px;">
         <section>
              <h2>Perros en adopción</h2>
              <table> 
@@ -142,8 +142,9 @@
                 
              </table>
         </section>
+       </div>
 
-    <section class="formulario"> 
+    <section class="formulario" style="max-width: 800px;">
         <h2>Formulario de Adopción</h2>
        
         <p>
@@ -182,7 +183,8 @@
     </section>
 
     <hr>
-        
+
+  
     <article>
         <h2>Educación y Comunidad</h2>
 
@@ -205,7 +207,7 @@
 
     <hr>
   
-     <section class="formulario">
+     <section class="formulario" style="max-width: 800px;">
      
     <h2>Ser voluntario</h2>
    

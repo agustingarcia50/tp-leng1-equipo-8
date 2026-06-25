@@ -4,7 +4,8 @@
   --color-secundario: #5D4037;
   --color-acento: #C97C5D; 
   --color-fondo: #FAF3E0;      /* crema cálido */
-   --color-texto: #2B2B2B;
+  --color-texto: #2B2B2B;
+  --color-formulario: #FFFDF9; /*Blanco calido*/
 }
 
 /*reset basico*/
@@ -28,6 +29,7 @@ h1 {
   font-weight: 800;
   color: var(--color-fondo);
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 h2 {
@@ -35,6 +37,7 @@ h2 {
   color: var(--color-secundario);
   border-bottom: 2px solid var(--color-primario);
   padding-bottom: 0.5rem;
+  text-align: center;
 }
 
 h3 {
@@ -52,7 +55,7 @@ header {
   background-color: var(--color-secundario);
   color: var(--color-fondo);
   padding: 20px;
-  text-align: center;
+  
 
   position: sticky;   
   top: 0;             
@@ -67,18 +70,15 @@ nav {
 
 nav ul {
      list-style: none;
-    padding: 0;
+     padding: 0;
 }
+
 
 nav a {
   text-decoration: none;
   color: var(--color-fondo);
   font-weight: bold;
-  transition: color 0.3s ease;
-}
 
-nav a:hover {
-  color: var(--color-acento);
 }
 
 .enlaces-destacados a {
@@ -109,8 +109,23 @@ article {
     margin-bottom: 25px;
 }
 
+article a{
+  color: var(--color-primario);
+  text-decoration: underline;
+}
+
+article a:hover {
+  color: var(--color-acento);
+  text-decoration: none;
+}
+
 p {
     margin-bottom: 15px;
+}
+
+.informacion-contacto a {
+    color: var(--color-texto);
+    text-decoration: underline;
 }
 
 /*banner*/
@@ -128,6 +143,14 @@ p {
   max-width: 100%;            
   height: auto;
   display: block;
+}
+.banner-texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
 }
 
 .banner-texto h2 {
@@ -149,20 +172,20 @@ p {
 table {
   width: 100%;
   margin-top: 20px;
-  background-color: white;
-  border-radius: 10px;
+  background-color: var(--color-formulario);
+  border-radius: 12px;
+  border-spacing: 0;
   overflow: hidden;
-  border: 2px solid var(--color-primario);
-  border-collapse: collapse;
+  border: 2px solid var(--color-secundario);
+  border-collapse: separate;
+  box-shadow: 0 4px 15px rgba(93,64,55,0.08); /*Sombra suave*/
 }
 
 table img {
-  width: 90px;
-  height: 90px;
-  object-fit: cover;
-  border-radius: 12px;
+  width: 70px;
+  height:70px;
   border: 3px solid var(--color-primario);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.);
 }
 
 
@@ -176,11 +199,11 @@ th {
 td {
   padding: 12px;
   text-align: center;
-  border-bottom:  1px solid var(--color-acento);
+  border-bottom:  1px solid var(--color-secundario);
 }
 
 tbody tr:nth-child(even) {
-    background-color: var(--color-fondo);
+    background-color: #F7F4EF
 }
 
 tr:hover {
@@ -190,7 +213,7 @@ tr:hover {
 /*formularios*/
 
 .formulario {
-  background-color: var(--color-fondo);
+  background-color: var(--color-formulario);
   margin: 30px auto;
   padding: 20px;
   border-radius: 15px;
@@ -318,4 +341,36 @@ footer {
 
 .badge-tarjeta.urgente {
   background-color: #E63946; 
+}
+
+/* bootstrap-personalizacion*/
+
+.navbar-patitas{
+  background-color: var(--color-secundario);
+}
+
+.nav-link {
+  font-size: 18px;      
+  font-weight: bold;   
+  color: var(--color-fondo); 
+}
+
+.nav-link:hover {
+  color: var(--color-acento);
+}
+
+.navbar-logo{
+  width: 280px;
+  height: auto;
+}
+
+.btn-outline-primary {
+  border-color: var(--color-primario);
+  color: var(--color-acento);
+}
+
+.btn-outline-primary:hover{
+  background-color: var(--color-acento);
+  border-color: var(--color-acento);
+  color: white
 }
