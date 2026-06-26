@@ -374,3 +374,44 @@ footer {
   border-color: var(--color-acento);
   color: white
 }
+
+/* Colores para el Modo Oscuro */
+body.dark-mode {
+  --color-fondo: #1E1E1E;       
+  --color-texto: #F5F5F5;       
+  --color-secundario: #121212;   
+  --color-primario: #5D4037;   
+  --color-formulario: #2A2A2A;   
+  --color-acento: #D48C70;      
+}
+
+
+.btn-modo-oscuro {
+  background-color: var(--color-acento);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto 0 auto; /* Centrado debajo del título en el header */
+  transition: all 0.3s ease;
+}
+
+/* Ajuste para que los textos dentro de las tarjetas blancas también se lean bien */
+body.dark-mode .valor-card, 
+body.dark-mode .miembro-card {
+  background-color: #2A2A2A;
+  color: var(--color-texto);
+}
+
+/* Ajuste para las filas pares de las tablas en modo oscuro */
+body.dark-mode tbody tr:nth-child(even) {
+    background-color: #252525;
+}
+
+body.dark-mode h2 {
+  color: white; 
+  border-bottom-color: var(--color-acento); 
+}
