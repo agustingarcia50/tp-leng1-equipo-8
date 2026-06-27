@@ -63,20 +63,20 @@
         <h2>Contacto</h2>
         <p>Para consultas, rescates, voluntariado o donaciones. Completá el formulario</p>
     
-    <form action="#" method="post">
+    <form id="form-contacto" action="#" method="post">
         <br>
         <label for="nombre">Nombre y Apellido</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Ej: Nahir Alvarez" required>
+        <input type="text" id="contacto-nombre" name="nombre" placeholder="Ej: Nahir Alvarez" required>
         <br>
         <label for="email">Correo Electronico</label>
-        <input type="email" id="email" name="email" placeholder="tucorreo@mail.com" required>
+        <input type="email" id="contacto-email" name="email" placeholder="tucorreo@mail.com" required>
         <br>
         <label for="telefono">Telefono</label>
-        <input type="tel" id="telefono" name="telefono" placeholder="+54 9 123456789" required>
+        <input type="tel" id="contacto-telefono" name="telefono" placeholder="+54 9 123456789" required>
         <br>
         <label for="programa">Motivo de contacto</label>
-         <select name="programa" id="programa" required>
-         <option value="elegir programa">Elegir motivo</option>  
+         <select name="programa" id="contacto-programa" required>
+         <option value="">Elegir motivo</option>  
          <option value="voluntariado">Voluntariado</option>
          <option value="rescate">Rescate de animales</option>
          <option value="donaciones">Donaciones</option> 
@@ -84,17 +84,18 @@
         </select>
         <br>
         <label for="disponibilidad">Disponibilidad</label>
-        <select name="disponibilidad" id="disponibilidad" required>
-        <option value="Horario de contacto">Horario de contacto preferido</option>
+        <select name="disponibilidad" id="contacto-disponibilidad" required>
+        <option value="">Horario de contacto preferido</option>
         <option value="Mañana">Mañana</option>
         <option value="Tarde">Tarde</option>
         <option value="Noche">Noche</option>
         </select>
         <br>
         <label for="mensaje">Contanos más detalles</label>
-        <textarea name="mensaje" id="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        <textarea name="contacto-mensaje" id="contacto-mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..." required></textarea>
         <br>
         <button type="submit" class="btn btn-outline-primary">Enviar</button>
+            <span id="mensaje-contacto"></span>
     </form>
     </section>
    </main>

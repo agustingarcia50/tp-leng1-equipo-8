@@ -1,4 +1,4 @@
-
+// MODO OSCURO - PATITAS FELICES 
 document.addEventListener("DOMContentLoaded", () => {
     const btnDarkMode = document.getElementById("toggle-oscuro-modo");
     const body = document.body;
@@ -21,3 +21,141 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+// VALIDACIÓN DE FORMULARIO DE ADOPCION
+
+
+const formAdopcion = document.getElementById("form-adopcion"); // selecciona el formulario con id indicado
+const inputEmail = document.getElementById("email-adopcion"); // selecciona el input con id email-adopcion
+const inputMensaje = document.getElementById("mensaje-adopcion"); // selecciona el elemento con id 
+const inputNombre = document.getElementById("nombre-adopcion") ;
+const inputTelefono = document.getElementById("telefono-adopcion") ;
+const selectMascota = document.getElementById("tipoMascota");
+// mensaje de alerta
+const msgAdopcion = document.getElementById("mensaje-alerta-adopcion");
+//estamos trabajando con el formulario evitar que la pagnina recargue (pierda datos)
+formAdopcion.addEventListener("submit", (e) => { // cuando se envia el formulario
+    e.preventDefault(); // evita que la pagina recargue
+//validar email
+const email = inputEmail.value.trim(); // trim() elimina los espacios en blanco al inicio y al final del string
+const nombre= inputNombre.value.trim();
+const telefono= inputTelefono.value.trim();
+const mascota = selectMascota.value;
+const mensaje = inputMensaje.value.trim();
+if(email.length < 4 || !email.includes("@")){ // si el email tiene menos de 4 caracteres o no contiene @
+    msgAdopcion.textContent = "Por favor ingrese un email válido"; // muestra el mensaje de error
+    msgAdopcion.style.color = "#de1919"; // cambia el color del mensaje a rojo
+    return; // termina la funcion 
+}
+
+// 2. Validar que completen todo y que SI O SI elijan una mascota (mascota === "elegir")
+    if (nombre === "" || telefono === "" || mensaje === "" || mascota === "elegir") {
+        msgAdopcion.textContent = "Por favor, completa todos los campos y selecciona qué mascota querés adoptar."; 
+        msgAdopcion.className = "Error";
+        msgAdopcion.style.color = "#de1919"; 
+        return;
+    }
+
+// todo ok 
+msgAdopcion.textContent = `¡Gracias ${nombre}! Tu mensaje fue recibido.` ;
+msgAdopcion.className ="Exito" ;
+msgAdopcion.style.color = "#1a6b2a";
+// limpiar el formulario
+formAdopcion.reset();
+});
+
+//VALIDAR FORMULARIO VOLUNTARIOs  
+
+const formVoluntariado = document.getElementById("form-voluntariado"); 
+const inputEmailVol = document.getElementById("email-voluntario"); 
+const inputNombreVol = document.getElementById("nombre-voluntario"); 
+const inputTelefonoVol = document.getElementById("telefono-voluntario"); 
+const inputEdadVol = document.getElementById("edad-voluntario");
+const selectDisponibilidad = document.getElementById("disponibilidad-voluntario");
+
+// texto que aparece  abajo del botón
+const msgVoluntariado = document.getElementById("mensaje-voluntariado"); 
+
+formVoluntariado.addEventListener("submit", (e) => { 
+    e.preventDefault(); 
+    
+   
+    const email = inputEmailVol.value.trim(); 
+    const nombre = inputNombreVol.value.trim();
+    const telefono = inputTelefonoVol.value.trim();
+    const edad = inputEdadVol.value.trim();
+    const disponibilidad = selectDisponibilidad.value; // El select no lleva trim()
+
+    // 1. Validar email
+    if (email.length < 4 || !email.includes("@")) { 
+        msgVoluntariado.textContent = "Por favor ingrese un email válido"; 
+        msgVoluntariado.className = "Error";
+        msgVoluntariado.style.color = "#de1919"; 
+        return; 
+    }
+    
+    // 2. Validar que completen los campos obligatorios y elijan una opción de horario
+    if (nombre === "" || telefono === "" || edad === "" || disponibilidad === "seleccionar") {
+        msgVoluntariado.textContent = "Por favor, completa todos los campos y selecciona una disponibilidad horaria."; 
+        msgVoluntariado.className = "Error";
+        msgVoluntariado.style.color = "#de1919"; 
+        return;
+    }
+
+    // TODO OK 
+    msgVoluntariado.textContent = `¡Gracias ${nombre}! Tu solicitud de voluntariado fue recibida.`; 
+    msgVoluntariado.className = "Exito"; 
+    msgVoluntariado.style.color = "#1a6b2a"; // Verde éxito
+    
+    // Limpiar el formulario
+    formVoluntariado.reset();
+});
+
+// VALIDACIÓN DEL FORMULARIO DE CONTACTO
+
+const formContacto = document.getElementById("form-contacto");
+
+
+
+    const msgContacto = document.getElementById("mensaje-contacto");
+
+    formContacto.addEventListener("submit", (e) => {
+
+        e.preventDefault();
+
+        const nombre = document.getElementById("contacto-nombre").value.trim();
+        const email = document.getElementById("contacto-email").value.trim();
+        const telefono = document.getElementById("contacto-telefono").value.trim();
+        const programa = document.getElementById("contacto-programa").value;
+        const disponibilidad = document.getElementById("contacto-disponibilidad").value;
+        const mensaje = document.getElementById("contacto-mensaje").value.trim();
+
+        // Validar email
+        if (email.length < 4 || !email.includes("@")) {
+            msgContacto.textContent = "Por favor ingresá un email válido.";
+            msgContacto.style.color = "#de1919";
+            return;
+        }
+
+        // Validar que todos los campos estén completos
+        if (
+            nombre === "" ||
+            telefono === "" ||
+            programa === "" ||
+            disponibilidad === "" ||
+            mensaje === ""
+        ) {
+
+            msgContacto.textContent = "Completá todos los campos antes de enviar.";
+            msgContacto.style.color = "#de1919";
+            return;
+        }
+
+        // Todo correcto
+        msgContacto.textContent = `¡Gracias ${nombre}! Tu solicitud de voluntariado fue recibida.`; 
+        msgContacto.style.color = "#1a6b2a";
+
+        formContacto.reset();
+
+    });
+

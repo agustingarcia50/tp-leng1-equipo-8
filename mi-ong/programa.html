@@ -154,7 +154,7 @@
             Si estás interesado en adoptar a uno de nuestros perros, por favor completa el siguiente formulario. Nuestro equipo se pondrá en contacto contigo para continuar con el proceso de adopción.
         </p>
 
-    <form  action="#" method="post">
+    <form  id="form-adopcion" action="#" method="post">
         <label for="nombre-adopcion">Nombre completo:</label>
         <input type="text" id="nombre-adopcion" name="nombre" required>
         <br>
@@ -178,10 +178,11 @@
         <br>
 
         <label for="mensaje">Contanos por qué querés adoptar:</label>
-        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+        <textarea id="mensaje-adopcion" name="mensaje" rows="4"></textarea>
         <br>
 
         <button type="submit" class="btn btn-outline-primary">Enviar solicitud</button>
+        <span id="mensaje-alerta-adopcion"></span>
     </form>
     </section>
 
@@ -218,30 +219,31 @@
         Si querés sumarte como voluntario en Patitas Felices, completá el siguiente formulario. Nuestro equipo se pondrá en contacto contigo para coordinar tu participación.
       </p>
 
-  <form action="#" method="post">
+  <form id="form-voluntariado" action="#" method="post">
 
-    <label for="nombre-voluntariado">Nombre y apellido:</label>
-    <input type="text" id="nombre-voluntariado" name="nombre" required>
+    <label for="nombre-voluntariado">Nombre completo:</label>
+    <input type="text" id="nombre-voluntario" name="nombre" required>
 
     <br>
 
     <label for="email-voluntariado">Correo electrónico:</label>
-    <input type="email" id="email-voluntariado" name="email" required>
+    <input type="email" id="email-voluntario" name="email" required>
 
     <br>
 
     <label for="telefono-voluntariado">Teléfono:</label>
-    <input type="tel" id="telefono-voluntariado" name="telefono" required>
+    <input type="tel" id="telefono-voluntario" name="telefono" required>
 
     <br>
 
     <label for="edad-voluntariado">Edad:</label>
-    <input type="number" id="edad-voluntariado" name="edad" min="16" required>
+    <input type="number" id="edad-voluntario" name="edad" min="18" required>
 
     <br>
 
     <label for="disponibilidad">Disponibilidad horaria:</label>
-    <select id="disponibilidad" name="disponibilidad" required>
+    <select id="disponibilidad-voluntario" name="disponibilidad" required>
+      <option value="seleccionar">Seleccionar horario laboral</option>
       <option value="manana">Mañana</option>
       <option value="tarde">Tarde</option>
       <option value="noche">Noche</option>
@@ -251,12 +253,12 @@
     <br>
 
     <label for="experiencia">¿Tenés experiencia con animales?</label>
-    <textarea id="experiencia" name="experiencia" rows="3"></textarea>
+    <textarea id="experiencia-voluntario" name="experiencia" rows="3"></textarea>
 
     <br>
 
     <button type="submit" class="btn btn-outline-primary">Quiero ser voluntario</button>
-
+        <span id="mensaje-voluntariado"></span>
   </form>
   </section>
 </main>
