@@ -37,10 +37,10 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
-                    <li  class="nav-item"><a class="nav-link "href= "./index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link "href= "./nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link "href= "./programa.html">Programas</a></li>
-                    <li class="nav-item"><a class="nav-link "href= "./contacto.html">Contacto</a></li>
+                    <li  class="nav-item"><a class="nav-link" href= "./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link"  href= "./nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link"  href= "./programa.html">Programas</a></li>
+                    <li class="nav-item"><a class="nav-link"  href= "./contacto.html">Contacto</a></li>
 
 
             </ul>
@@ -168,7 +168,7 @@
         <br>
 
         <label for="mascota">¿Qué mascota querés adoptar?</label>
-        <select id="tipoMascota" name="tipoMascota">
+        <select id="mascota" name="tipoMascota">
             <option value="elegir">Elegí una mascota</option>
             <option value="perro">Coco</option>
             <option value="perro">Luna</option>
@@ -177,7 +177,7 @@
         </select>
         <br>
 
-        <label for="mensaje">Contanos por qué querés adoptar:</label>
+        <label for="mensaje-adopcion">Contanos por qué querés adoptar:</label>
         <textarea id="mensaje-adopcion" name="mensaje" rows="4"></textarea>
         <br>
 
@@ -222,28 +222,28 @@
   <form id="form-voluntariado" action="#" method="post">
 
     <label for="nombre-voluntariado">Nombre completo:</label>
-    <input type="text" id="nombre-voluntario" name="nombre" required>
+    <input type="text" id="nombre-voluntariado" name="nombre" required>
 
     <br>
 
     <label for="email-voluntariado">Correo electrónico:</label>
-    <input type="email" id="email-voluntario" name="email" required>
+    <input type="email" id="email-voluntariado" name="email" required>
 
     <br>
 
     <label for="telefono-voluntariado">Teléfono:</label>
-    <input type="tel" id="telefono-voluntario" name="telefono" required>
+    <input type="tel" id="telefono-voluntariado" name="telefono" required>
 
     <br>
 
     <label for="edad-voluntariado">Edad:</label>
-    <input type="number" id="edad-voluntario" name="edad" min="18" required>
+    <input type="number" id="edad-voluntariado" name="edad" min="18" required>
 
     <br>
 
-    <label for="disponibilidad">Disponibilidad horaria:</label>
+    <label for="disponibilidad-voluntario">Disponibilidad horaria:</label>
     <select id="disponibilidad-voluntario" name="disponibilidad" required>
-      <option value="seleccionar">Seleccionar horario laboral</option>
+      <option value="" disabled selected> Seleccionar horario laboral</option>
       <option value="manana">Mañana</option>
       <option value="tarde">Tarde</option>
       <option value="noche">Noche</option>
@@ -252,7 +252,7 @@
 
     <br>
 
-    <label for="experiencia">¿Tenés experiencia con animales?</label>
+    <label for="experiencia-voluntario">¿Tenés experiencia con animales?</label>
     <textarea id="experiencia-voluntario" name="experiencia" rows="3"></textarea>
 
     <br>
