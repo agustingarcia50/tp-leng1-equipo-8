@@ -152,7 +152,7 @@ const formContacto = document.getElementById("form-contacto");
         }
 
         // Todo correcto
-        msgContacto.textContent = `¡Gracias ${nombre}! Tu solicitud de voluntariado fue recibida.`; 
+        msgContacto.textContent = `¡Gracias ${nombre}! Tu consulta fue enviada correctamente.`; 
         msgContacto.style.color = "#1a6b2a";
 
         formContacto.reset();
