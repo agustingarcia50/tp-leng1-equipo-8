@@ -26,11 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 const formAdopcion = document.getElementById("form-adopcion"); // selecciona el formulario con id indicado
+if (formAdopcion) {
 const inputEmail = document.getElementById("email-adopcion"); // selecciona el input con id email-adopcion
 const inputMensaje = document.getElementById("mensaje-adopcion"); // selecciona el elemento con id 
 const inputNombre = document.getElementById("nombre-adopcion") ;
 const inputTelefono = document.getElementById("telefono-adopcion") ;
-const selectMascota = document.getElementById("tipoMascota");
+const selectMascota = document.getElementById("mascota");
 // mensaje de alerta
 const msgAdopcion = document.getElementById("mensaje-alerta-adopcion");
 //estamos trabajando con el formulario evitar que la pagnina recargue (pierda datos)
@@ -62,16 +63,18 @@ msgAdopcion.className ="Exito" ;
 msgAdopcion.style.color = "#1a6b2a";
 // limpiar el formulario
 formAdopcion.reset();
-});
+})};
 
 //VALIDAR FORMULARIO VOLUNTARIOs  
 
 const formVoluntariado = document.getElementById("form-voluntariado"); 
-const inputEmailVol = document.getElementById("email-voluntario"); 
-const inputNombreVol = document.getElementById("nombre-voluntario"); 
-const inputTelefonoVol = document.getElementById("telefono-voluntario"); 
-const inputEdadVol = document.getElementById("edad-voluntario");
-const selectDisponibilidad = document.getElementById("disponibilidad-voluntario");
+if (formVoluntariado) {
+const inputEmailVol = document.getElementById("email-voluntariado"); 
+const inputNombreVol = document.getElementById("nombre-voluntariado"); 
+const inputTelefonoVol = document.getElementById("telefono-voluntariado"); 
+const inputEdadVol = document.getElementById("edad-voluntariado");
+const selectDisponibilidad = document.getElementById("disponibilidad-voluntariado");
+const inputExperienciaVol = document.getElementById("experiencia-voluntariado");
 
 // texto que aparece  abajo del botón
 const msgVoluntariado = document.getElementById("mensaje-voluntariado"); 
@@ -84,6 +87,7 @@ formVoluntariado.addEventListener("submit", (e) => {
     const nombre = inputNombreVol.value.trim();
     const telefono = inputTelefonoVol.value.trim();
     const edad = inputEdadVol.value.trim();
+    const experiencia = inputExperienciaVol.value.trim();
     const disponibilidad = selectDisponibilidad.value; // El select no lleva trim()
 
     // 1. Validar email
@@ -95,7 +99,7 @@ formVoluntariado.addEventListener("submit", (e) => {
     }
     
     // 2. Validar que completen los campos obligatorios y elijan una opción de horario
-    if (nombre === "" || telefono === "" || edad === "" || disponibilidad === "seleccionar") {
+    if (nombre === "" || telefono === "" || edad === "" || experiencia === "" || disponibilidad === "seleccionar") {
         msgVoluntariado.textContent = "Por favor, completa todos los campos y selecciona una disponibilidad horaria."; 
         msgVoluntariado.className = "Error";
         msgVoluntariado.style.color = "#de1919"; 
@@ -109,13 +113,13 @@ formVoluntariado.addEventListener("submit", (e) => {
     
     // Limpiar el formulario
     formVoluntariado.reset();
-});
+})};
 
 // VALIDACIÓN DEL FORMULARIO DE CONTACTO
 
 const formContacto = document.getElementById("form-contacto");
 
-
+if (formContacto) {
 
     const msgContacto = document.getElementById("mensaje-contacto");
 
@@ -137,25 +141,15 @@ const formContacto = document.getElementById("form-contacto");
             return;
         }
 
-        // Validar que todos los campos estén completos
-        if (
-            nombre === "" ||
-            telefono === "" ||
-            programa === "" ||
-            disponibilidad === "" ||
-            mensaje === ""
-        ) {
-
-            msgContacto.textContent = "Completá todos los campos antes de enviar.";
-            msgContacto.style.color = "#de1919";
-            return;
-        }
+        // Validar que todos los campos estén completos 
+        <!-- Lo verifica los required en el formulario de contacto -->
+    
 
         // Todo correcto
-        msgContacto.textContent = `¡Gracias ${nombre}! Tu consulta fue enviada correctamente.`; 
+        msgContacto.textContent = `¡Gracias ${nombre}! Tu consulta fue enviada correctamente.`;
+        msgContacto.className = "Exito";
         msgContacto.style.color = "#1a6b2a";
-
         formContacto.reset();
 
-    });
+    })};
 

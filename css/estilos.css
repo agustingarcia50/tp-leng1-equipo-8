@@ -367,12 +367,27 @@ footer {
 .btn-outline-primary {
   border-color: var(--color-primario);
   color: var(--color-acento);
+  box-shadow: none;
 }
 
 .btn-outline-primary:hover{
   background-color: var(--color-acento);
   border-color: var(--color-acento);
-  color: white
+  color: white ;
+  box-shadow: none;
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-primary:focus-visible {
+    background-color: var(--color-acento);
+    border-color: var(--color-acento);
+    color: white;
+    box-shadow: none;
+}
+
+.btn-outline-primary:active:focus {
+    box-shadow: none;
 }
 
 /* Colores para el Modo Oscuro */
