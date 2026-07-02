@@ -423,3 +423,24 @@ body.dark-mode h2 {
   color: white; 
   border-bottom-color: var(--color-acento); 
 }
+
+
+body.dark-mode header h1 {
+    color: #FAF3E0; 
+}
+
+body.dark-mode .enlaces-destacados a {
+    color: #FAF3E0 !important; 
+}
+
+
+body.dark-mode .navbar-patitas .nav-link {
+    color: #FAF3E0 !important;
+}
+
+
+body.dark-mode .enlaces-destacados a:hover,
+body.dark-mode .navbar-patitas .nav-link:hover {
+    color: var(--color-acento) !important; 
+    text-decoration: none;
+}
