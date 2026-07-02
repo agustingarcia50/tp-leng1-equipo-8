@@ -142,7 +142,7 @@ if (formContacto) {
         }
 
         // Validar que todos los campos estén completos 
-        <!-- Lo verifica los required en el formulario de contacto -->
+        /* Lo verifica los required en el formulario de contacto */
     
 
         // Todo correcto
